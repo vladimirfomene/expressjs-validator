@@ -1,5 +1,5 @@
 {
-  "name": "express-validator",
+  "name": "expressjs-validator",
   "version": "1.0.0",
   "description": "This app demonstrates server side validation with express-validator.js",
   "main": "app.js",
@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "vladimir fomene",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "pug": "^2.0.3"
+  }
 }
