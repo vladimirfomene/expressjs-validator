@@ -1,6 +1,6 @@
-var express = require('express');
+const express = require('express');
 const { check, validationResult } = require('express-validator/check');
-var router = express.Router();
+const router = express.Router();
 
 
 router.post('/',[
@@ -17,11 +17,10 @@ router.post('/',[
     }
   }),
   check('isAdmin').optional().isIn(['on', 'off'])
-  ],function(req, res){
-  console.log(req.body);
+  ],
+  function(req, res){
   const errors = validationResult(req);
   if(!errors.isEmpty()){
-    console.log(errors);
     return res.status(422).jsonp(errors.array());
   }else{
     //store value in the database and redirect the user to /users
