@@ -1,0 +1,11 @@
+{
+  "name": "express-validator",
+  "version": "1.0.0",
+  "description": "This app demonstrates server side validation with express-validator.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vladimir fomene",
+  "license": "ISC"
+}
