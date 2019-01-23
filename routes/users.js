@@ -9,19 +9,16 @@ router.post('/', [
     check('email', 'Your email is not valid').exists().isEmail(),
     check('phoneNumber', 'Your phone number must be at least 8 digits').exists().isLength({min: 8}),
     check('password', 'Your password must be at least 5 characters').exists().isLength({min: 5}),
-    check('confirmPassword').custom((value, {req}) => {
-      if (value !== req.body.password) {
-        throw new Error('Password confirmation does not match password');
-      }
-    }),
+    check('confirmPassword', 'Passwords do not match').custom((value, {req}) => (value === req.body.password)),
     check('isAdmin').optional().isIn(['on', 'off'])
   ],
   function (req, res) {
     const errors = validationResult(req);
+
     if (!errors.isEmpty()) {
       return res.status(422).jsonp(errors.array());
     } else {
-      //store value in the database and redirect the user to /users
+      res.send({});
     }
   });
 
