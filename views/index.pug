@@ -5,28 +5,27 @@ block content
     .alert(class="alert-danger", role="alert", id="error-group", style="display: none")
       ul(id="errors")
     .row
-      .col-sm
-      .col-sm
+      .col-sm.col-md-4.offset-md-4
         h3 Welcome To Express Validator!
-          form(class="px-4 py-3", action="", method="post", id="signup-form")
-            .form-group
-              input.form-control(type="text", id="firstName", placeholder="First name")
-            .form-group
-              input.form-control(type="text", id="lastName", placeholder="Last name")
-            .form-group
-              input.form-control(type="text", id="classYear", placeholder="Class Year")
-            .form-group
-              input.form-control(type="email", id="email", placeholder="Email")
-            .form-group
-              input.form-control(type="text", id="phoneNumber", placeholder="Phone Number")
-            .form-group
-              input.form-control(type="password", id="password", placeholder="Password")
-            .form-group
-              input.form-control(type="password", id="confirmPassword", placeholder="Confirm Password")
+        form(class="px-4 py-3", action="", method="post", id="signup-form")
+          .form-group
+            input.form-control(type="text", id="firstName", placeholder="First name")
+          .form-group
+            input.form-control(type="text", id="lastName", placeholder="Last name")
+          .form-group
+            input.form-control(type="text", id="classYear", placeholder="Class Year")
+          .form-group
+            input.form-control(type="email", id="email", placeholder="Email")
+          .form-group
+            input.form-control(type="text", id="phoneNumber", placeholder="Phone Number")
+          .form-group
+            input.form-control(type="password", id="password", placeholder="Password")
+          .form-group
+            input.form-control(type="password", id="confirmPassword", placeholder="Confirm Password")
+          .form-group
             .form-check
-              input(type="checkbox", id="isAdmin")
-              label(class="form-check-label", style="font-weight: normal, font-size: 0.75rem") Is Admin?
-            .form-group
-              button.form-control(type="submit", class="btn btn-primary", id="signup-btn") Submit
-      .col-sm
-
+              input.form-check-input(type="checkbox", id="isAdmin")
+              label.form-check-label
+                | Is Admin?
+          .form-group
+            button.form-control(type="submit", class="btn btn-primary", id="signup-btn") Submit
