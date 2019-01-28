@@ -1,10 +1,4 @@
-$('#signup-form').submit(function(e){
-    return false;
-});
-
-
-
-$('#signup-btn').click(function(){
+$('#signup-btn').click(function () {
   $.ajax({
     url: '/users',
     type: 'POST',
@@ -18,17 +12,22 @@ $('#signup-btn').click(function(){
       password: $('#password').val(),
       confirmPassword: $('#confirmPassword').val(),
       isAdmin: $('#isAdmin').val()
-
     },
-    success: function(data){
-      alert("Your Submission was Successful");
+    success: function () {
+      $('#error-group').css('display', 'none');
+      alert('Your submission was successful');
     },
-    error: function(data){
+    error: function (data) {
       $('#error-group').css('display', 'block');
-      errors = JSON.parse(data.responseText);
-      for(var i = 0; i < errors.length; i++){
-        $('#errors').append("<li>" + errors[i].msg + "</li>");
+      var errors = JSON.parse(data.responseText);
+      var errorsContainer = $('#errors');
+      errorsContainer.innerHTML = '';
+      var errorsList = '';
+
+      for (var i = 0; i < errors.length; i++) {
+        errorsList += '<li>' + errors[i].msg + '</li>';
       }
+      errorsContainer.html(errorsList);
     }
   });
 });
