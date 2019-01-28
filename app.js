@@ -1,13 +1,11 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
 const indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const app = express();
-const port = 3000
+const port = 3000;
 
-app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -19,6 +17,6 @@ app.set('view engine', 'pug');
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.listen(port, () => console.log(`Expressjs-Validator listening on port ${port}!`))
+app.listen(port, () => console.log(`Expressjs-Validator listening on port ${port}!`));
 
 module.exports = app;
