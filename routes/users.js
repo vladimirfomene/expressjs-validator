@@ -24,9 +24,9 @@ router.post('/',[
     return res.status(422).jsonp(errors.array());
   }else{
     //store value in the database and redirect the user to /users
+    return res.send({});
   }
 
 });
 
 module.exports = router;
-
