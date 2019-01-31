@@ -5,30 +5,31 @@
 ## Prerequisites
 Softwares you need to install to follow the tutorial:
 
-* Node.js and npm (It is included in your Node.js download).
-* Any text editor or IDE of your choice
+* Node.js and npm (included in your Node.js download). Node.js v8.13.0 was used for this tutorial.
+* Any text editor or IDE of your choice.
 
 ## What is express-validator?
 * Brief summary of express-validator based on the official website description of the tool.
+* Why is it important?
 
 
-## What will you build?
-* Give the reader a brief summary of what they will be building.
+## What you will build?
+* Brief summary of what they will be building.
 
 ## Bootstrap Your Application
-* Create a Express.js project.
+* Create an Express.js project.
 
-### Setup the frontend of your application
+### Build the Front-end of your application
 * Install pug.
 * Build the homepage of your application with Bootstrap.
 * Add jQuery for handling interaction and AJAX.
 
-## Setup the backend of your application
+## Build the Back-end of your application
 * Install express-validator
-* Setup routes and validate data sent from frontend.
+* Setup routes and validate data sent from front-end.
 
 # Testing for validation
-* Show snapshots of application validating user input.
+* Show snapshots of the application validating user input.
 
 ## Conclusion
 * Remind the reader what he/she learned in the article.
