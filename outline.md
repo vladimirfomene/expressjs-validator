@@ -13,20 +13,17 @@ Softwares you need to install to follow the tutorial:
 * Why is it important?
 
 
-## What you will build?
-* Brief summary of what they will be building.
+## Setup your playground for express-validator
+* Fork the Express.js starter project.
+* Brief description of the starter project's functionality.
 
-## Bootstrap Your Application
-* Create an Express.js project.
-
-### Build the Front-end of your application
-* Install pug.
-* Build the homepage of your application with Bootstrap.
+## Build form for user input
+* Build homepage with form to be validated.
 * Add jQuery for handling interaction and AJAX.
 
-## Build the Back-end of your application
+## Server-side validation with express-validator
 * Install express-validator
-* Setup routes and validate data sent from front-end.
+* Setup routes and validate data sent from homepage form.
 
 # Testing for validation
 * Show snapshots of the application validating user input.
