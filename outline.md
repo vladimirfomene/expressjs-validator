@@ -23,10 +23,23 @@ Softwares you need to install to follow the tutorial:
 
 ## Server-side validation with express-validator
 * Install express-validator
-* Setup routes and validate data sent from homepage form.
+* Setup routes for `/` and `/users`.
 
-# Testing for validation
-* Show snapshots of the application validating user input.
+### Validating Name field
+* validate the field and test it.
+
+### Validating Class Year field
+* validate the field and test it.
+
+### Validating Weekday field
+* validate the field and test it.
+
+### Validating email field
+* validate the field and test it.
+
+### Validating password fields
+* validate the field and test it.
+
 
 ## Conclusion
 * Remind the reader what he/she learned in the article.
