@@ -6,4 +6,5 @@ router.get('/', function (req, res) {
   res.render('index');
 });
 
+//{subjects:["Networks", "Compiler", "Machine Learning", "Operating Systems"]}
 module.exports = router;

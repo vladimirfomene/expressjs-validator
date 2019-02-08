@@ -4,14 +4,13 @@ $('#signup-btn').click(function () {
     type: 'POST',
     cache: false,
     data: {
-      firstName: $('#firstName').val(),
-      lastName: $('#lastName').val(),
+      name: $('#name').val(),
       classYear: $('#classYear').val(),
+      weekday: $('#weekday').val(),
       email: $('#email').val(),
       phoneNumber: $('#phoneNumber').val(),
       password: $('#password').val(),
-      confirmPassword: $('#confirmPassword').val(),
-      isAdmin: $('#isAdmin').val()
+      confirmPassword: $('#confirmPassword').val()
     },
     success: function () {
       $('#error-group').css('display', 'none');
@@ -31,4 +30,3 @@ $('#signup-btn').click(function () {
     }
   });
 });
-
