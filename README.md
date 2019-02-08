@@ -18,15 +18,3 @@
 ## Testing the application
 
 * Visit `http://localhost:3000` and enter bogus data in the signup form. Then press enter to see how the app reacts.
-
-
-## Validation Rules
-
-* `firstName` must exist with a mininum length of 2.
-* `lastName` must exist with a mininum length of 2.
-* `classYear` is an int and must exist.
-* `email`, email must exist and has to be valid.
-* `phoneNumber`, must exist and be at least 8 digits.
-* `password`, must exist with a mininum length of 5.
-* `confirmPassword`, must be the same as `password`.
-* `isAdmin` is optional.
